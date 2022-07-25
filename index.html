@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MME Test">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h2 class="header-content">MMEink Interview Assignment</h2>
+  </header>
+  <main>
+
+    <div class="modal">
+      <div class="modal-content">
+        <a href="#" class="close">&times;</a>
+        <h3>Welcome!</h3>
+        <p>I handwrote this site instead of using bootstrap to give you a good idea into my thought process and design patterns. If you are interested in seeing a more well thought out design with bootstrap that I've worked on then check out <a href="https://abfreshfoods.com/" target="_blank">ABFreshFoods.</a></p>
+      </div>
+    </div>
+
+    <section id="hero">
+      <div class="container">
+        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+      </div>
+    </section>
+
+    <section id="form">
+      <h3>Contact Form</h6>
+      <div class="container">
+        <form name="ContactForm" method="POST" data-netlify="true" id="contact-form">
+          
+          <label for="name">Name:</label>
+          <input type="text" id="fname" name="name" placeholder="John Smith">
+          
+          <label for="state">State:</label>
+          <select id="state" name="state">
+            <option value="NY">New York</option>
+            <option value="NNY">Not New York</option>
+          </select>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Time for the big content box" style="height:200px"></textarea>
+          
+          <input type="submit" value="Submit" class="submit">
+          
+        </form>
+      </div>
+    </section>
+
+  <section id="cat">
+    <h3>Random Cat API</h3>
+    <p>I thought consuming a public API would add a nice touch so I added a little JS to pull a random cat image from <a href="https://aws.random.cat/">random.cat.</a> Just click the button to see your kitty.</p>
+    <button id="cat-btn" class="btn">🐈</button>
+    <div id="cat-result">
+      <img id="cat-pic" alt="random cat picture" src="./images/cat.jpg"/>
+    </div>
+  </section>
+
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>
